@@ -4,6 +4,7 @@ from tqdm import tqdm
 import traceback
 from concurrent.futures import ThreadPoolExecutor
 from Neurology_Orchestrator.steps.a0 import A0Step
+from Neurology_Orchestrator.steps.a1 import A1Step
 from Neurology_Orchestrator.steps.a21 import A21Step
 from Neurology_Orchestrator.steps.a22 import A22Step
 from Neurology_Orchestrator.steps.a23 import A23Step
@@ -102,7 +103,7 @@ def build_diagnostic_input(row):
     }
 
 
-base_path = r"neurology_dataset.csv"
+base_path = r"..\neurology_dataset.csv"
 df = pd.read_csv(base_path)
 INPUT_BUILDERS = {
     "A2-H1": build_input_h1,
