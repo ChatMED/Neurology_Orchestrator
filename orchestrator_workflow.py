@@ -115,14 +115,14 @@ INPUT_BUILDERS = {
 
 PIPELINE = [
     ("A0", A0Step, ["Introduction"]),
-    ("A1", A25Step, ["A0"]),
+    ("A1", A1Step, ["A0"]),
     ("A2-H1", A21Step, ["A0"]),
     ("A2-H2", A22Step, ["A0", "A2-H1"]),
     ("A2-H3", A23Step, ["A0", "A1", "A2-H1", "A2-H2"]),
     ("A2-H4", A24Step, ["A0", "A1", "A2-H3"]),
     ("A3", A3Step, ["A0", "A1", "A2-H4"]),
     ("A3.1", A31Step, ["A0", "A1", "A3"]),
-    ("A2-H5", A26Step, ["A0", "A3.1"]),
+    ("A2-H5", A25Step, ["A0", "A3.1"]),
     ("A4", A4Step, ["A2-H5"]),
     ("A5", A5Step, ["A0", "A2-H5", "A4"]),
     ("A5.5", A55Step, ["A0", "A5"]),
