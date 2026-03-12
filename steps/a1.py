@@ -1,7 +1,7 @@
 from typing import Optional
 
 from pydantic import BaseModel, Field
-from neurochestration.steps.base_step import BaseStep
+from Neurology_Orchestrator.steps.base_step import BaseStep
 
 
 class RedFlag(BaseModel):
