@@ -1,0 +1,11 @@
+langgraph
+langchain-openai
+langchain_core
+langchain[openai]
+sqlalchemy
+psycopg2-binary
+pydantic
+fastapi[all]
+jinja2
+pandas
+markdown
